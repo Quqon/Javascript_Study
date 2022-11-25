@@ -1,2 +1,2 @@
 # Javascript_Study
-Javascript study 레포 입니다.
+프로그래머스 Javascript 알고리즘 문제 레포 입니다.
