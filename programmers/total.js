@@ -50,8 +50,81 @@ const solution = (num, total) => {
     }
 }
 
+// const solution = (num, total) => {
+//     let answer = [];
+//     let sum;
 
-num = 5
-total = -15
+//     if (num == 1) {
+//         answer.push(total)
+//         console.log(answer)
+//         return answer
+//     }
+
+//     for (let i = total - 1; i > -90; i--) {
+//             answer.push(i)
+//             sum = 0;
+//             console.log(i)
+//             if (answer.length == num) {
+//                 console.log("////////////////")
+//                 answer.forEach((e) => {
+//                     sum += e
+//                 })
+//                 console.log(sum, "sum")
+//             }
+//             if (sum > total && answer.length == num) {
+//                 console.log("-----------------",  answer)
+                
+//                 answer = answer.filter((e) => {
+//                     // console.log(e, "eeeeeeeee")
+//                     return e < 0
+//                 })
+                
+//                 continue;
+//             }
+//             else if (sum < total && answer.length == num) {
+//                 answer.sort()
+//                 console.log(answer, "~~~~~~~~~~~~")
+//                 for (let j = 0; j < 101; j ++) {
+//                     // console.log("****************")
+                    
+//                     // console.log(answer, "@@@@@@@@@@@@@")
+//                     answer = answer.slice(1, answer.length)
+//                     answer.push(answer[answer.length - 1] + 1)
+//                     console.log(answer, "#############")
+//                     sum = 0;
+//                     answer.forEach((e) => {
+//                         sum += e
+//                     })
+//                     console.log(sum)
+                        
+//                     if (sum == total) {
+//                         console.log(answer, " $$$$$$$$$$$$$")
+//                         if (answer[0] < 0 && answer[num - 1] < 0) {
+                            
+//                             answer.reverse()
+//                             console.log(answer, "*****************")
+//                         }
+//                         answer.sort()
+//                         console.log(answer, "!!!!!!!!!!!!!")
+//                         return answer
+//                     }
+//                     else {
+//                         continue
+//                     }
+//                 }
+
+                
+//             }
+//             else if (sum == total && answer.length == num) {
+//                 console.log("==========")
+//                 answer.sort();
+//                 console.log(answer)
+//                 return answer
+//             }
+            
+//         }
+//     }
+num = 100
+total = 150
 
 solution(num, total)
